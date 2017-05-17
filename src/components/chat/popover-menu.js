@@ -120,7 +120,7 @@ class PopoverMenu extends PureComponent {
 				<Popover id="popover" title={this.props.title ? uname : false} className="popover-menu">
 					<ul style={{listStyle: 'none', paddingLeft: '0px', marginBottom: '0px'}}>
 						{this.canMessage()}
-						<li><Link to={'/user/' + uname}><i className="fa fa-line-chart" aria-hidden="true"></i> View Stats</Link></li>
+					if ( !userLoggedIn ) 	<li><Link to={'/user/' + uname}><i className="fa fa-line-chart" aria-hidden="true"></i> View Stats</Link></li>
 						{this.canTip()}
 						{this.addOrRemoveFriend()}
 						{this.canMute()}
