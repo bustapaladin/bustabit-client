@@ -128,7 +128,7 @@ class Register extends Component {
 					browserHistory.push('/');
 					userInfo.initialize(info.userInfo);
 					localStorage.setItem('secret', info.sessionId);
-					notification.setMessage(<span><span className="green-tag">Welcome {uname}! </span> You are successfully registered.</span>);
+					notification.setMessage('<span><span className="green-tag">Welcome {uname}! </span> You are successfully registered.</span>');
 				}, err => {
 					this.setState({ submitting: false });
 					switch (err) {
@@ -138,7 +138,7 @@ class Register extends Component {
 							});
 							break;
 						default:
-							notification.setMessage(<span><span className="red-tag">Error </span> Unexpected server error: {err}.</span>, 'error');
+							notification.setMessage('<span><span className="red-tag">Error </span> Unexpected server error: {err}.</span>', 'error');
 					}
 				})
 
