@@ -169,9 +169,9 @@ class LoginForm extends PureComponent {
 									Uname:
 								</InputGroup.Addon>
 								<input type="text"
-											 placeholder="uname"
+											 placeholder="Username"
 											 className="form-control"
-											 value={this.state.uname}
+											 value={this.state.username}
 											 ref={(input) => { this.firstInput = input; }}
 											 onChange={(event) => this.onUnameChange(event)}
 								/>
