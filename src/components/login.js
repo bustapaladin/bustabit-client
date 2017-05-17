@@ -171,7 +171,7 @@ class LoginForm extends PureComponent {
 								<input type="text"
 											 placeholder="Username"
 											 className="form-control"
-											 value={this.state.username}
+											 value={this.state.uname}
 											 ref={(input) => { this.firstInput = input; }}
 											 onChange={(event) => this.onUnameChange(event)}
 								/>
