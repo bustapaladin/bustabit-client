@@ -166,7 +166,7 @@ class LoginForm extends PureComponent {
 						<FormGroup className={unameError ? 'has-error' : ''}>
 							<InputGroup>
 								<InputGroup.Addon>
-									Uname:
+									Username:
 								</InputGroup.Addon>
 								<input type="text"
 											 placeholder="Username"
